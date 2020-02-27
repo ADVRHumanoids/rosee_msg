@@ -61,6 +61,7 @@ add_message_files(
 add_service_files(
    FILES
    ActionsInfo.srv
+   SelectablePairInfo.srv
  )
 
 ## Generate actions in the 'action' folder

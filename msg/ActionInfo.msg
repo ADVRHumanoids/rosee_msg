@@ -22,3 +22,7 @@ string topic_name
 
 # names of the selectable fingers/joints (eg 2 finger for pinch) if any
 string[] selectable_names
+
+# number of necessary selectable_names to select before sending message
+# (eg 1 for trig, 2 for pinch, 1 for moreTips)
+uint8 max_selectable
