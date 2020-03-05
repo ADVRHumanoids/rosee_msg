@@ -1,0 +1,8 @@
+#goal definition
+ROSEEActionControl goal_action
+---
+#result definition
+ROSEEActionControl completed_action
+---
+#feedback (how much the action is completed)
+float64 completation_percentage
