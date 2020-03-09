@@ -42,11 +42,15 @@ uint8 PRIMITIVE_MORETIPS = 6
 uint8 PRIMITIVE_NONE = 7
 uint8 actionPrimitive_type
 
-
-
 # names of the selectable fingers/joints (eg 2 finger for pinch) if any
 string[] selectable_names
 
 # number of necessary selectable_names to select before sending message
 # (eg 1 for trig, 2 for pinch, 1 for moreTips)
 uint8 max_selectable
+
+
+## used only for timed.. better to make a new msg?
+float64[] before_margins
+float64[] after_margins
+string[] inner_actions
