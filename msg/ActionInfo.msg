@@ -17,8 +17,32 @@ time stamp
 # name of the action
 string action_name
 
-# name of the topic where we have to write for this action
-string topic_name
+# action type, that is an enum and with msg we can only define it like this
+# remember to add here if we add new type in Action.h and ActionPrimitive.h ..
+uint8 PRIMITIVE = 0
+uint8 GENERIC = 1 
+uint8 COMPOSED = 2 
+uint8 TIMED = 3
+uint8 NONE = 4
+uint8 action_type
+
+#name of the ros action (used as namespaces for rosAction topics)
+string ros_action_name
+
+## subsequent info used only for primitives, so for actionBoxesLayout 
+## (derived from ActionLayout)
+
+uint8 PRIMITIVE_PINCHSTRONG = 0
+uint8 PRIMITIVE_PINCHWEAK = 1
+uint8 PRIMITIVE_MULTIPLEPINCHSTRONG = 2
+uint8 PRIMITIVE_TRIG = 3
+uint8 PRIMITIVE_TIPFLEX = 4
+uint8 PRIMITIVE_FINGFLEX = 5
+uint8 PRIMITIVE_MORETIPS = 6
+uint8 PRIMITIVE_NONE = 7
+uint8 actionPrimitive_type
+
+
 
 # names of the selectable fingers/joints (eg 2 finger for pinch) if any
 string[] selectable_names
