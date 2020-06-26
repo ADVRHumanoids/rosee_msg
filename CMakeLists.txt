@@ -57,6 +57,7 @@ add_message_files(
 	EETriggerControl.msg
 	ActionInfo.msg
 	ROSEEActionControl.msg
+	MotorCurrent.msg
 )
 
 ## Generate services in the 'srv' folder
