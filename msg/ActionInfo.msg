@@ -26,9 +26,6 @@ uint8 TIMED = 3
 uint8 NONE = 4
 uint8 action_type
 
-#name of the ros action (used as namespaces for rosAction topics)
-string ros_action_name
-
 ## subsequent info used only for primitives, so for actionBoxesLayout 
 ## (derived from ActionLayout)
 
