@@ -39,3 +39,6 @@ string[] selectable_items
 # grasp percentage from 0.0 to 1.0
 float64 percentage
 
+# wanted maximum error norm for joints positions error (if not set, ie it is 0, default one will be used)
+# the action will not be considered completed until the norm error of joint pos is below this value
+float64 error_norm
