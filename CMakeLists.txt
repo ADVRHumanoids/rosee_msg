@@ -58,6 +58,8 @@ add_message_files(
 	ActionInfo.msg
 	ROSEEActionControl.msg
 	MotorCurrent.msg
+	MotorPosition.msg
+	GraspingAction.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -65,6 +67,7 @@ add_service_files(
    FILES
    ActionsInfo.srv
    SelectablePairInfo.srv
+   GraspingActionsAvailable.srv
  )
 
 ## Generate actions in the 'action' folder
