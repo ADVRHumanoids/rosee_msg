@@ -27,6 +27,10 @@ string action_name
 # names of the selectable fingers/joints (eg 2 finger for pinch) if any
 string[] elements_involved
 
+# The mask which says if the motor is used by the action (count > 0) or not (count = 0). 
+# It is unique for each action (differently from action_motor_positions which is a vector) 
+JointsInvolvedCount action_motor_count
+
 # actuator position associated with the action. Can be more than one for some action (like pinches and PRIMITIVE_SINGLEJOINTMULTIPLETIPS)
 MotorPosition[] action_motor_positions
 

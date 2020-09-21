@@ -60,6 +60,7 @@ add_message_files(
 	MotorCurrent.msg
 	MotorPosition.msg
 	GraspingAction.msg
+	JointsInvolvedCount.msg
 )
 
 ## Generate services in the 'srv' folder
