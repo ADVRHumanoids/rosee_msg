@@ -55,7 +55,7 @@ add_message_files(
 	EEGraspControl.msg
 	EEPinchControl.msg
 	EETriggerControl.msg
-	ActionInfo.msg
+	GraspingPrimitiveAggregated.msg
 	ROSEEActionControl.msg
 	MotorCurrent.msg
 	MotorPosition.msg
@@ -66,7 +66,7 @@ add_message_files(
 ## Generate services in the 'srv' folder
 add_service_files(
    FILES
-   ActionsInfo.srv
+   GraspingPrimitiveAggregatedAvailable.srv
    SelectablePairInfo.srv
    GraspingActionsAvailable.srv
  )
