@@ -61,6 +61,7 @@ add_message_files(
 	MotorPosition.msg
 	GraspingAction.msg
 	JointsInvolvedCount.msg
+	NewGenericGraspingAction.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -69,6 +70,7 @@ add_service_files(
    GraspingPrimitiveAggregatedAvailable.srv
    SelectablePairInfo.srv
    GraspingActionsAvailable.srv
+   NewGenericGraspingActionSrv.srv
  )
 
 ## Generate actions in the 'action' folder
