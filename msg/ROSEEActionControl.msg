@@ -42,3 +42,7 @@ float64 percentage
 # wanted maximum error norm for joints positions error (if not set, ie it is 0, default one will be used)
 # the action will not be considered completed until the norm error of joint pos is below this value
 float64 error_norm
+
+#Optional fields, since now we use them to send also a current/torque to heri ii
+string[] optional_motors_names
+float64[] optional_motors_commands
