@@ -57,7 +57,6 @@ add_message_files(
 	EETriggerControl.msg
 	GraspingPrimitiveAggregated.msg
 	ROSEEActionControl.msg
-	MotorCurrent.msg
 	MotorPosition.msg
 	GraspingAction.msg
 	JointsInvolvedCount.msg
