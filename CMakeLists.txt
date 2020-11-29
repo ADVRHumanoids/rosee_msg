@@ -70,6 +70,7 @@ add_service_files(
    SelectablePairInfo.srv
    GraspingActionsAvailable.srv
    NewGenericGraspingActionSrv.srv
+   HandInfo.srv
  )
 
 ## Generate actions in the 'action' folder

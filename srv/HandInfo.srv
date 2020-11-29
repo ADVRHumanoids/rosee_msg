@@ -1,0 +1,16 @@
+## Service msg for all the info needed by ROSEE Grasp Planner
+
+#empty request for now
+---
+
+#all the subsequent info will follow the order specified in motors_names and fingertips_names
+string[] fingers_names
+string[] motors_names
+
+std_msgs/Float32MultiArray[] tips_jacobians 
+std_msgs/Float32MultiArray transmission_matrix
+float32[] motors_stiffness_diagonal
+
+float32[] tips_frictions
+float32[] tips_force_limits
+float32[] motors_torque_limits
