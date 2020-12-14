@@ -1,6 +1,11 @@
 ## Service msg for all the info needed by ROSEE Grasp Planner
 
-#empty request for now
+# Providing this info is necessary for heri Hal so it knows for which pose it should compute the reqeusted matrices
+
+float32[] motor_positions
+float32[] motor_positions_reference
+std_msgs/Float32MultiArray finger_joint_positions #in a finger, the phalange joints order must be from the base finger to the tip
+
 ---
 
 #all the subsequent info will follow the order specified in motors_names and fingertips_names
@@ -9,8 +14,8 @@ string[] motors_names
 
 std_msgs/Float32MultiArray[] tips_jacobians 
 std_msgs/Float32MultiArray transmission_matrix
-float32[] motors_stiffness_diagonal
+geometry_msgs/Point[] tips_forces
 
+float32[] motors_stiffness
 float32[] tips_frictions
-float32[] tips_force_limits
 float32[] motors_torque_limits
