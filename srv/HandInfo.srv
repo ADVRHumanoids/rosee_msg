@@ -12,9 +12,15 @@ std_msgs/Float32MultiArray finger_joint_positions #in a finger, the phalange joi
 string[] fingers_names
 string[] motors_names
 
-std_msgs/Float32MultiArray[] tips_jacobians 
 std_msgs/Float32MultiArray transmission_matrix
-geometry_msgs/Point[] tips_forces
+
+std_msgs/Float32MultiArray[] tips_jacobians_normal 
+std_msgs/Float32MultiArray[] tips_jacobians_friction
+#note: third componet of force is trascurable
+
+float32[] tips_forces_normal
+float32[] tips_forces_friction
+#note: third componet of force is trascurable
 
 float32[] motors_stiffness
 float32[] tips_frictions
