@@ -14,6 +14,8 @@ string[] motors_names
 
 std_msgs/Float32MultiArray transmission_matrix
 
+std_msgs/Float32MultiArray[] transmission_square_matrices
+
 std_msgs/Float32MultiArray[] tips_jacobians_normal 
 std_msgs/Float32MultiArray[] tips_jacobians_friction
 #note: third componet of force is trascurable
