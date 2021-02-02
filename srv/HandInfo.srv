@@ -16,6 +16,11 @@ std_msgs/Float32MultiArray transmission_matrix
 
 std_msgs/Float32MultiArray[] transmission_square_matrices
 
+# The matrices introduces because motor is not the first finger joint,
+# computed as transmission_square_matrice ^-T * T*
+std_msgs/Float32MultiArray[] transmission_augmented_matrices
+
+
 std_msgs/Float32MultiArray[] tips_jacobians_normal 
 std_msgs/Float32MultiArray[] tips_jacobians_friction
 #note: third componet of force is trascurable
