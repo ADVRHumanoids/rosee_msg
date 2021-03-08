@@ -59,6 +59,7 @@ add_message_files(
 	GraspingPrimitiveAggregated.msg
 	ROSEEActionControl.msg
 	MotorPosition.msg
+	MotorPhalangePressure.msg
 	GraspingAction.msg
 	JointsInvolvedCount.msg
 	NewGenericGraspingAction.msg
