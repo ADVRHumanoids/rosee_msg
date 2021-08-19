@@ -29,7 +29,7 @@ uint8 PRIMITIVE_MULTIPLEPINCHSTRONG = 2
 uint8 PRIMITIVE_TRIG = 3
 uint8 PRIMITIVE_TIPFLEX = 4
 uint8 PRIMITIVE_FINGFLEX = 5
-uint8 PRIMITIVE_MORETIPS = 6
+uint8 PRIMITIVE_SINGLEJOINTMULTIPLETIPS = 6
 uint8 PRIMITIVE_NONE = 7
 uint8 actionPrimitive_type
 
@@ -39,3 +39,10 @@ string[] selectable_items
 # grasp percentage from 0.0 to 1.0
 float64 percentage
 
+# wanted maximum error norm for joints positions error (if not set, ie it is 0, default one will be used)
+# the action will not be considered completed until the norm error of joint pos is below this value
+float64 error_norm
+
+#Optional fields, since now we use them to send also a current/torque to heri ii
+string[] optional_motors_names
+float64[] optional_motors_commands

@@ -1,5 +1,0 @@
-## Info service to pass info to gui
-
-#empty request
----
-ActionInfo[] actionsInfo

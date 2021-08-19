@@ -14,6 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
 	actionlib_msgs
 	std_msgs
 	std_srvs
+	geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -55,15 +56,23 @@ add_message_files(
 	EEGraspControl.msg
 	EEPinchControl.msg
 	EETriggerControl.msg
-	ActionInfo.msg
+	GraspingPrimitiveAggregated.msg
 	ROSEEActionControl.msg
+	MotorPosition.msg
+	MotorPhalangePressure.msg
+	GraspingAction.msg
+	JointsInvolvedCount.msg
+	NewGenericGraspingAction.msg
 )
 
 ## Generate services in the 'srv' folder
 add_service_files(
    FILES
-   ActionsInfo.srv
+   GraspingPrimitiveAggregatedAvailable.srv
    SelectablePairInfo.srv
+   GraspingActionsAvailable.srv
+   NewGenericGraspingActionSrv.srv
+   HandInfo.srv
  )
 
 ## Generate actions in the 'action' folder
@@ -78,6 +87,7 @@ generate_messages(
    DEPENDENCIES
    std_msgs
    std_srvs
+   geometry_msgs
    actionlib_msgs
  )
 
