@@ -2,8 +2,8 @@
 Changelog for package rosee_msg
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.2 (2021-10-04)
+------------------
 * roscpp and rospy dependencies && authors and urls in package
 * Contributors: Davide Torielli
 
