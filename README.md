@@ -4,6 +4,8 @@ This package is a collection of ROS messages for [ROS End-Effector](https://advr
 
 The ROS End-Effector main documentation is here: https://advrhumanoids.github.io/ROSEndEffectorDocs/.
 
+This Branch is for ROS2 version, related to the ROS2 version of the main package hosted [here](https://advrhumanoids.github.io/ROSEndEffector2/)
+
 
 ***
 <!-- 
