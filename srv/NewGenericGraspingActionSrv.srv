@@ -1,9 +1,9 @@
 ## Service associated with GenericGraspingAction message
 
-NewGenericGraspingAction newAction
+NewGenericGraspingAction new_action
 
 # user can also request to store the action in a yaml file, togheter with the others
-bool emitYaml
+bool emit_yaml
 
 ---
 

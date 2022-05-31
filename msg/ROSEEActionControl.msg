@@ -9,7 +9,7 @@ uint32 seq
 # * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
 # * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
 # time-handling sugar is provided by the client library
-time stamp
+builtin_interfaces/Time stamp
 
 # first finger to use to pinch
 string action_name
@@ -31,7 +31,7 @@ uint8 PRIMITIVE_TIPFLEX = 4
 uint8 PRIMITIVE_FINGFLEX = 5
 uint8 PRIMITIVE_SINGLEJOINTMULTIPLETIPS = 6
 uint8 PRIMITIVE_NONE = 7
-uint8 actionPrimitive_type
+uint8 action_primitive_type
 
 # array for additional items (like 2 finger for pinch). It can be also empty 
 string[] selectable_items

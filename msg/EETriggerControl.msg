@@ -9,7 +9,7 @@ uint32 seq
 # * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
 # * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
 # time-handling sugar is provided by the client library
-time stamp
+builtin_interfaces/Time stamp
 
 # finger to use to trigger
 string finger_trigger

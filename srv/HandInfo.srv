@@ -4,7 +4,7 @@
 
 float32[] motor_positions
 float32[] motor_positions_reference
-std_msgs/Float32MultiArray finger_joint_positions #in a finger, the phalange joints order must be from the base finger to the tip
+example_interfaces/Float32MultiArray finger_joint_positions #in a finger, the phalange joints order must be from the base finger to the tip
 
 ---
 
@@ -12,17 +12,17 @@ std_msgs/Float32MultiArray finger_joint_positions #in a finger, the phalange joi
 string[] fingers_names
 string[] motors_names
 
-std_msgs/Float32MultiArray transmission_matrix
+example_interfaces/Float32MultiArray transmission_matrix
 
-std_msgs/Float32MultiArray[] transmission_square_matrices
+example_interfaces/Float32MultiArray[] transmission_square_matrices
 
 # The matrices introduces because motor is not the first finger joint,
 # computed as transmission_square_matrice ^-T * T*
-std_msgs/Float32MultiArray[] transmission_augmented_matrices
+example_interfaces/Float32MultiArray[] transmission_augmented_matrices
 
 
-std_msgs/Float32MultiArray[] tips_jacobians_normal 
-std_msgs/Float32MultiArray[] tips_jacobians_friction
+example_interfaces/Float32MultiArray[] tips_jacobians_normal 
+example_interfaces/Float32MultiArray[] tips_jacobians_friction
 #note: third componet of force is trascurable
 
 float32[] tips_forces_normal
