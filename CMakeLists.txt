@@ -41,6 +41,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     "srv/NewGenericGraspingActionSrv.srv"
     "srv/HandInfo.srv"
     "action/ROSEECommand.action"
+    DEPENDENCIES builtin_interfaces geometry_msgs std_srvs example_interfaces actionlib_msgs
 )
 
 
