@@ -34,6 +34,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     "msg/GraspingAction.msg"
     "msg/JointsInvolvedCount.msg"
     "msg/NewGenericGraspingAction.msg"
+    "msg/ObjectModelMsg.msg"
     "srv/GraspingPrimitiveAggregatedAvailable.srv"
     "srv/SelectablePairInfo.srv"
     "srv/GraspingActionsAvailable.srv"
