@@ -10,7 +10,7 @@
     <license>Apache License 2.0</license>
 
     <url type="website">https://advrhumanoids.github.io/ROSEndEffectorDocs/</url>
-    <url type="repository">https://github.com/ADVRHumanoids/rosee_msg/</url>
+    <url type="repository">https://github.com/ADVRHumanoids/rosee_msg/tree/ros2</url>
     <url type="bugtracker">https://github.com/ADVRHumanoids/rosee_msg/issues/</url>
 
     <author>Davide Torielli</author>
